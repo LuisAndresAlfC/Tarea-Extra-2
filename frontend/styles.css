@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #00aaff;
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos al principio y al final del header */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+header h1 {
+    margin: 0;
+    color: #00aaff;
+}
+
+button#themeButton {
+    padding: 8px 16px; /* Reducido el padding para hacer el botón más pequeño */
+    background-color: #00aaff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px; /* Tamaño de fuente reducido */
+    transition: background-color 0.3s;
+}
+
+button#themeButton:hover {
+    background-color: #008ecc;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 150px;
+    border: 2px solid #ccc;
+    transition: border 0.3s;
+}
+
+.gallery img:hover {
+    border: 2px solid #00aaff;
+}
+
+form {
+    background-color: #1e1e1e;
+    padding: 20px;
+    margin: 20px auto; /* Centra horizontalmente y establece margen superior e inferior de 20px */
+    border-radius: 10px;
+    max-width: 600px; /* Establece un ancho máximo para el formulario */
+    text-align: left;
+    padding-left: 40px; /* Añade un espacio adicional a la izquierda */
+    padding-right: 60px; /* Añade un espacio adicional a la derecha */
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #00aaff;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+form button {
+    padding: 8px 16px; /* Reducido el padding para hacer el botón más pequeño */
+    background-color: #00aaff;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px; /* Tamaño de fuente reducido */
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #008ecc;
+}
+
+/* Estilos para el tema oscuro */
+.dark-theme {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-theme header {
+    background-color: #1e1e1e;
+    border-bottom: 2px solid #00aaff;
+}
+
+.dark-theme header h1 {
+    color: #00aaff;
+}
+
+.dark-theme button#themeButton {
+    background-color: #00aaff;
+}
+
+.dark-theme button#themeButton:hover {
+    background-color: #008ecc;
+}
+
+/* Estilos para el tema claro */
+.light-theme {
+    background-color: #fff;
+    color: #000;
+}
+
+.light-theme header {
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #008ecc;
+}
+
+.light-theme header h1 {
+    color: #008ecc;
+}
+
+.light-theme button#themeButton {
+    background-color: #008ecc;
+}
+
+.light-theme button#themeButton:hover {
+    background-color: #006699;
+}

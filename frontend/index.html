@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Web Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ciencia y Exploración Espacial</h1>
+        <button id="themeButton">Cambiar Tema</button>
+    </header>
+    <main>
+
+        <!-- Galería de Imágenes -->
+        <section id="galeria">
+            <h2>Galería de Imágenes</h2>
+            <div class="gallery">
+                <img src="https://images.ecestaticos.com/GMtb05nADre7TJBVXk7OooIEU08=/70x290:2000x1374/1338x752/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F6a5%2Fefd%2F23f%2F6a5efd23f716bdcf9d50678fcd45e270.jpg" alt="Descripción de la imagen 1">
+                <img src="https://i.pinimg.com/originals/76/3b/34/763b3430768f487a20dfb1519b0afab5.jpg" alt="Descripción de la imagen 2">
+                <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/5357641277789f0a8de3eo.jpg?w=546&h=308" alt="Descripción de la imagen 3">
+                <!-- Añade más imágenes aquí -->
+            </div>
+        </section>
+
+        <!-- Cuestionario -->
+        <section id="cuestionario">
+            <h2>Cuestionario</h2>
+            <form id="questionnaire-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="pregunta1">¿Cuál es tu planeta favorito?</label>
+                <input type="text" id="mensaje1" name="mensaje1" required>
+
+                <label for="pregunta2">¿Qué misión espacial te ha impresionado más?</label>
+                <input type="text" id="mensaje2" name="mensaje2" required>
+
+                <label for="pregunta3">¿Qué opinas sobre la colonización de Marte?</label>
+                <textarea id="mensaje3" name="mensaje3" required></textarea>
+
+                <button type="submit" id="submitButton">Enviar</button>
+                <div id="confirmationMessage" style="display: none;">¡Comentario enviado con éxito!</div>
+            </form>
+        </section>
+    </main>
+    <script src="scipt.js"></script>
+</body>
+</html>
